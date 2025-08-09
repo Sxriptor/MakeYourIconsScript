@@ -1,0 +1,27 @@
+{
+  "name": "logos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:assets": "node scripts/generate-assets.js --input whispra.png --name Whispra --out dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "favicons": "^7.2.0",
+    "fs-extra": "^11.2.0",
+    "icon-gen": "^3.0.1",
+    "potrace": "^2.1.6",
+    "sharp": "^0.33.4"
+  },
+  "overrides": {
+    "sharp": "^0.33.4",
+    "favicons": {
+      "sharp": "^0.33.4"
+    }
+  }
+}
